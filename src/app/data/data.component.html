@@ -1,1 +1,128 @@
-<p>data works!</p>
+<div class="container-fluid p-3">
+  <div class="row">
+    <div class="col">Tax Category You Belongs to:</div>
+    <div class="col">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <div class="container-fluid p-1">
+    <div class="row">
+      <form
+        [formGroup]="TaxForm"
+        (ngSubmit)="onSubmit()"
+        (keydown.enter)="$event.preventDefault()"
+        #aForm
+      >
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="string"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+              <!-- <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            > -->
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input
+                type="email"
+                class="form-control"
+                id="age"
+                aria-describedby="emailHelp"
+                placeholder="Age"
+              />
+              <!-- <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            > -->
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="family_members">Family Members</label>
+              <input
+                type="email"
+                class="form-control"
+                id="family_members"
+                aria-describedby="emailHelp"
+                placeholder="Total Family Members"
+              />
+              <!-- <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            > -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="total_income">Total Income</label>
+              <input
+                type="email"
+                class="form-control"
+                id="total_income"
+                aria-describedby="emailHelp"
+                placeholder="Total Income"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="total_sources">Total Sources</label>
+              <input
+                type="email"
+                class="form-control"
+                id="total_sources"
+                aria-describedby="emailHelp"
+                placeholder="Total Sources"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="income_sources">Income Sources</label>
+              <input
+                type="email"
+                class="form-control"
+                id="income_sources"
+                aria-describedby="emailHelp"
+                placeholder="Income Sources"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="pan_number">Pan Number</label>
+              <input
+                type="email"
+                class="form-control"
+                id="pan_number"
+                aria-describedby="emailHelp"
+                placeholder="Pan Number"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

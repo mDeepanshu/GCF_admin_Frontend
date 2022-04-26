@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/gfc-admin-frontend",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

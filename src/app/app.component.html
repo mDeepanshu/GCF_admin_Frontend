@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <div class="div" *ngIf="isLogin == false">
+    <app-login-page (loginEvent)="login($event)"></app-login-page>
+  </div>
+  <div class="div" *ngIf="isLogin != false">
+    <app-data></app-data>
+  </div>
+</div>
